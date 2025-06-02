@@ -349,3 +349,10 @@ template {
 [hidden] {
   display: none;
 }
+
+/* remove/change some basic settings */
+html * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

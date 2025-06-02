@@ -1,3 +1,13 @@
+/* root styles */
+:root {
+  --highlight-color: #013bed;
+  --primary-color: #00041d;
+  --secondary-color: #fff4e3;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
 /* header */
 
 /* main */
