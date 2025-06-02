@@ -10,6 +10,25 @@ body {
 }
 /* header */
 
+.nav-bar {
+  border: 1px solid;
+  width: max-content;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  gap: 2rem;
+  padding: 1rem;
+}
+.nav-bar ul li {
+  display: inline;
+}
+
+.nav-bar ul li:nth-child(3) {
+  color: var(--highlight-color);
+}
 /* main */
 
 /* footer */
