@@ -8,6 +8,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  /* background-color: var(--white-color); */
 }
 /* header */
 
@@ -70,5 +71,40 @@ header {
   background-image: url("/assets/gradient-img-v3.png");
   background-position: center;
   background-size: cover;
+}
+.title-info {
+  width: max-content;
+  border: 1px solid;
+}
+
+.title-info p {
+  font-size: 1.25rem;
+}
+
+.title-info h1 {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--highlight-color);
+  font-size: 4rem;
+}
+
+.title-info h2 {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.title-info p,
+.title-info h1,
+.title-info h2 {
+  padding: 0.25rem 1rem;
+  width: max-content;
+  background-color: var(--white-color);
+}
+
+.landing-arrow {
+  width: 50px;
+  background-color: var(--white-color);
 }
 /* footer */
