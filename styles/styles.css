@@ -79,7 +79,7 @@ body {
 
 header {
   position: absolute;
-  top: 5%;
+  top: 2%;
   right: 5%;
 }
 
@@ -284,13 +284,16 @@ td {
   flex-direction: column;
 }
 .works-section figcaption {
-  margin: 3rem 0 0.5rem;
+  margin: 3rem 0 0;
 
+  padding: 0.25rem;
   border-bottom: 2px solid var(--primary-color);
-  /* justify-self: flex-end; */
 }
 
 .works-section figure img {
   width: 100%;
+
+  height: 15.625rem;
+  object-fit: cover;
 }
 /* footer */
