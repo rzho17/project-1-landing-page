@@ -10,6 +10,17 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--white-color);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 /* header */
 
 header {
@@ -162,15 +173,12 @@ https://codepen.io/jakejarvis/pen/pBZWZw
 }
 
 .title-info h1 {
-  font-family: "Reenie Beanie", cursive;
-  font-weight: 400;
-  font-style: normal;
-
   color: var(--highlight-color);
   font-size: 4.5rem;
 }
 
 .title-info h2 {
+  font-family: "Open Sans", sans-serif;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -193,5 +201,23 @@ https://codepen.io/jakejarvis/pen/pBZWZw
 
 .about-section {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+.about-info h2 {
+  font-size: 3rem;
+  color: var(--highlight-color);
+  margin: 1.5rem 0;
+}
+
+.about-info p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.about-section img {
+  width: 100%;
 }
 /* footer */
