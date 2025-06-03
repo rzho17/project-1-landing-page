@@ -96,7 +96,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1rem;
+  padding: 1.5rem;
 
   width: 100%;
 }
@@ -204,7 +204,7 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   display: flex;
   flex-direction: column;
 
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .about-info h2 {
@@ -221,7 +221,7 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   width: 100%;
 }
 table {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 table,
@@ -231,6 +231,7 @@ td {
   border: 3px solid;
   border-collapse: collapse;
   border-top: none;
+  color: var(--primary-color);
 }
 
 table,
@@ -250,4 +251,5 @@ td:nth-of-type(4) {
 td {
   padding: 2rem 1rem 0.5rem;
 }
+
 /* footer */
