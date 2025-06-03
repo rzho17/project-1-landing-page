@@ -220,4 +220,34 @@ https://codepen.io/jakejarvis/pen/pBZWZw
 .about-section img {
   width: 100%;
 }
+table {
+  margin: 1rem 0;
+}
+
+table,
+tbody,
+tr,
+td {
+  border: 3px solid;
+  border-collapse: collapse;
+  border-top: none;
+}
+
+table,
+tr,
+tbody {
+  border-left: none;
+  border-right: none;
+}
+td:nth-of-type(1) {
+  border-left: none;
+}
+
+td:nth-of-type(4) {
+  border-right: none;
+}
+
+td {
+  padding: 2rem 1rem 0.5rem;
+}
 /* footer */
