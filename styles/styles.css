@@ -207,7 +207,8 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   padding: 1.5rem;
 }
 
-.about-info h2 {
+.about-info h2,
+.work-info h2 {
   font-size: 3rem;
   color: var(--highlight-color);
   margin: 1.5rem 0;
@@ -252,4 +253,44 @@ td {
   padding: 2rem 1rem 0.5rem;
 }
 
+/* works section */
+
+.works-section {
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.works-section h3 {
+  font-family: "open-sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.work-info {
+  margin: 2rem 0;
+}
+
+.work-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.works-section figure {
+  border: 2px solid var(--primary-color);
+  border-top: none;
+
+  display: flex;
+  flex-direction: column;
+}
+.works-section figcaption {
+  margin: 3rem 0 0.5rem;
+
+  border-bottom: 2px solid var(--primary-color);
+  /* justify-self: flex-end; */
+}
+
+.works-section figure img {
+  width: 100%;
+}
 /* footer */
