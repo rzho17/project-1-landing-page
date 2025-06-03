@@ -80,14 +80,37 @@ header {
   background-image: url("/assets/gradient-img-v3.png");
   background-position: center;
   background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+
+  border: 1px solid;
+  /* justify-content: center; */
+  /* align-items: flex-end; */
+  width: 100%;
 }
 
+.landing-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+
+  border: 1px solid;
+}
+
+.landing-info img {
+  align-self: flex-end;
+}
 .title-info {
   width: max-content;
   bottom: 15%;
 
-  position: absolute;
-  left: 5%;
+  /* position: absolute;
+  left: 5%; */
 }
 
 .title-info p {
@@ -170,9 +193,9 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   width: 50px;
   background-color: var(--white-color);
 
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
+  /* position: absolute; */
+  /* bottom: 15%;
+  right: 5%; */
 }
 
 /* about-section */
