@@ -6,8 +6,8 @@
   --white-color: #ebeef4;
   --gradient: linear-gradient(
     90deg,
-    rgba(1, 59, 237, 0.14) 0%,
-    rgba(247, 180, 54, 0.12) 100%
+    rgba(1, 59, 237, 0.63) 0%,
+    rgba(247, 180, 54, 0.65) 100%
   );
 }
 
@@ -146,6 +146,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
 /* hand wave animation */
 
 /* hand waving css referenced from
@@ -326,4 +327,33 @@ td {
   height: 15.625rem;
   object-fit: cover;
 }
+
 /* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+  margin-top: 5rem;
+  padding: 1rem;
+
+  background: var(--gradient);
+
+  color: var(--white-color);
+}
+
+footer h2 {
+  font-family: "Open sans", serif;
+  font-size: 0.85rem;
+}
+
+footer a {
+  padding: 0.5rem;
+}
+
+footer img {
+  width: 1.875rem;
+}
