@@ -1,7 +1,7 @@
 /* root styles */
 :root {
   --highlight-color: #013bed;
-  --primary-color: #00041d;
+  --primary-color: #020836;
   --secondary-color: #fff4e3;
   --white-color: #ebeef4;
 }
@@ -20,6 +20,11 @@ h6 {
   font-family: "Reenie Beanie", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.5;
 }
 /* header */
 
@@ -113,6 +118,7 @@ header {
 
 .landing-info img {
   align-self: flex-end;
+  width: 2.5rem;
 }
 .title-info {
   width: max-content;
@@ -121,6 +127,7 @@ header {
 .title-info p {
   font-size: 1.5rem;
   font-weight: 100;
+  line-height: normal;
 }
 
 /* hand wave animation */
@@ -189,12 +196,12 @@ https://codepen.io/jakejarvis/pen/pBZWZw
 .title-info h2 {
   padding: 0.25rem 0.5rem 0.25rem 0.25rem;
   width: max-content;
-  background-color: var(--white-color);
+  background: rgba(235, 238, 244, 0.85);
 }
 
 .landing-arrow {
   width: 50px;
-  background-color: var(--white-color);
+  background: rgba(235, 238, 244, 0.85);
 }
 
 /* about-section */
@@ -214,10 +221,6 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   margin: 1.5rem 0;
 }
 
-.about-info p {
-  font-weight: 300;
-  line-height: 1.5;
-}
 .about-section img {
   width: 100%;
 }
@@ -273,7 +276,7 @@ td {
 .work-projects {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 
 .works-section figure {
@@ -284,6 +287,7 @@ td {
   flex-direction: column;
 }
 .works-section figcaption {
+  font-weight: 300;
   margin: 3rem 0 0;
 
   padding: 0.25rem;
