@@ -280,10 +280,6 @@ td {
   text-align: center;
 }
 
-td a {
-  padding: 0.5rem;
-}
-
 /* works section */
 
 .works-section {
@@ -293,7 +289,7 @@ td a {
 
 .works-section h3 {
   font-family: "open-sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
