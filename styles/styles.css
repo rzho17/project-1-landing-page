@@ -4,6 +4,11 @@
   --primary-color: #020836;
   --secondary-color: #fff4e3;
   --white-color: #ebeef4;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(1, 59, 237, 0.14) 0%,
+    rgba(247, 180, 54, 0.12) 100%
+  );
 }
 
 body {
@@ -129,12 +134,18 @@ header {
   width: max-content;
 }
 
-.title-info p {
+.span-p {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
   font-size: 1.5rem;
   font-weight: 100;
   line-height: normal;
 }
 
+h1 {
+  display: flex;
+  flex-direction: column;
+}
 /* hand wave animation */
 
 /* hand waving css referenced from
@@ -184,21 +195,28 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   }
 }
 
-.title-info h1 {
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-h1 {
+  display: inline-block;
+  font-family: "Reenie Beanie", cursive;
   color: var(--highlight-color);
   font-size: 4.5rem;
 }
 
-.title-info h2 {
+.landing-info h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 1.25rem;
 }
 
-.title-info p,
-.title-info h1,
-.title-info h2 {
+.title-info .span-p,
+.title-info .span-p,
+.title-info .span-p {
   padding: 0.25rem 0.5rem 0.25rem 0.25rem;
   width: max-content;
   background: rgba(235, 238, 244, 0.85);
@@ -259,6 +277,11 @@ td:nth-of-type(4) {
 
 td {
   padding: 2rem 1rem 0.5rem;
+  text-align: center;
+}
+
+td a {
+  padding: 0.5rem;
 }
 
 /* works section */
@@ -285,18 +308,20 @@ td {
 }
 
 .works-section figure {
-  border: 2px solid var(--primary-color);
+  /* border: 2px solid var(--primary-color); */
+  border: 2px solid #e3e6fe;
   border-top: none;
 
   display: flex;
   flex-direction: column;
+  /* padding: 1rem; */
 }
 .works-section figcaption {
   font-weight: 300;
   margin: 3rem 0 0;
 
   padding: 0.25rem;
-  border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid #e3e6fe;
 }
 
 .works-section figure img {
