@@ -311,6 +311,7 @@ td {
   /* border: 2px solid var(--primary-color); */
   border: 2px solid #e3e6fe;
   border-top: none;
+  border-bottom: none;
 
   display: flex;
   flex-direction: column;
