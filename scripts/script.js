@@ -16,7 +16,12 @@ function overlayFunction(container, overlay) {
   container.addEventListener("mouseover", () => {
     overlay.style.display = "flex";
   });
+
   container.addEventListener("mouseout", () => {
+    overlay.style.display = "none";
+  });
+
+  container.addEventListener("touchend", () => {
     overlay.style.display = "none";
   });
 }

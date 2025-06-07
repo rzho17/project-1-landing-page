@@ -11,6 +11,9 @@
   );
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--white-color);
@@ -274,7 +277,9 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   color: var(--highlight-color);
   margin: 1.5rem 0;
 }
-
+.about-section figure:hover {
+  cursor: default;
+}
 .about-section img {
   width: 100%;
 }
@@ -340,6 +345,8 @@ td img {
 
 .work-info {
   margin: 2rem 0;
+
+  position: relative;
 }
 
 .work-info p {
@@ -416,6 +423,22 @@ figure:hover {
   object-fit: cover;
 }
 
+.home-arrow {
+  width: max-content;
+
+  margin: 2rem auto 0;
+}
+
+.home-arrow a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+.home-arrow a img {
+  width: 40px;
+  transform: rotate(180deg);
+}
 /* footer */
 
 footer {
@@ -494,6 +517,10 @@ footer img {
     gap: 2rem;
   }
 
+  .work-info-container {
+    position: relative;
+  }
+
   .work-info h2 {
     font-size: clamp(3rem, 5vw, 4rem);
   }
@@ -501,7 +528,6 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    /* align-items: flex-end; */
   }
 
   .work-projects article:nth-of-type(even) a {
@@ -519,6 +545,16 @@ footer img {
     min-width: 15rem;
     max-width: 20rem;
     text-align: right;
+  }
+
+  .home-arrow {
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+  }
+
+  .home-arrow a img {
+    width: 75px;
   }
 
   #project-4 a h3:nth-of-type(1) {
