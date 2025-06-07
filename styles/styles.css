@@ -239,6 +239,12 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   align-items: center;
 
   padding: 1.5rem;
+
+  background-image: url("/assets/about-gradient-v3.png");
+  background-position: center;
+  background-size: cover;
+
+  border: 1rem solid #ffffff;
 }
 
 .about-info {
@@ -308,6 +314,10 @@ td img {
 .works-section {
   min-height: 100vh;
   padding: 1.5rem;
+
+  background-image: url("/assets/works-background-v3.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .works-section h3 {
@@ -347,7 +357,7 @@ td img {
 .work-projects article {
   position: relative;
   /* border: 2px solid var(--primary-color); */
-  border: 2px solid #03369c;
+  border: 1px solid var(--highlight-color);
   border-top: none;
   border-bottom: none;
 
@@ -368,7 +378,7 @@ td img {
   font-family: "reenie beanie";
   font-size: 3.5rem;
   color: var(--white-color);
-  background-color: rgba(80, 80, 81, 0.8);
+  background-color: rgba(17, 17, 249, 0.8);
   backdrop-filter: blur(3px);
 }
 
@@ -377,8 +387,12 @@ figure:hover {
 }
 
 .work-projects h3 {
-  color: var(--primary-color);
-  font-weight: 700;
+  color: var(--highlight-color);
+  /* color: #27badb; */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
   margin: 3.5rem 0 0;
 
   padding: 0.25rem;
@@ -401,10 +415,11 @@ footer {
   align-items: center;
 
   gap: 1rem;
-  margin-top: 3rem;
   padding: 1rem;
 
-  background: var(--gradient);
+  background-image: url("/assets/footer-v1.png");
+  background-position: center;
+  background-size: cover;
 
   color: var(--white-color);
 }
@@ -444,6 +459,7 @@ footer img {
     justify-content: center;
     align-items: center;
 
+    border-width: 2rem;
     /* gap: 10rem; */
   }
 
@@ -476,18 +492,28 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
   }
 
   .work-projects article:nth-of-type(even) a {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: start;
+  }
+
+  .work-projects h3 {
+    margin-top: 1rem;
   }
 
   .work-projects h3,
   .work-projects a img {
     min-width: 15rem;
     max-width: 20rem;
+    text-align: right;
+  }
+
+  #project-4 a h3:nth-of-type(1) {
+    text-align: left;
   }
 
   /* footer */
