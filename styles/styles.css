@@ -256,9 +256,14 @@ https://codepen.io/jakejarvis/pen/pBZWZw
   max-width: 31.25rem;
 }
 
-.about-info h2,
-.work-info h2 {
-  font-size: 3rem;
+.about-info p {
+  margin: 0.5rem 0;
+  align-self: flex-start;
+}
+
+.about-info-container h2,
+.work-info-container h2 {
+  font-size: 4rem;
   color: var(--highlight-color);
   margin: 1.5rem 0;
 }
