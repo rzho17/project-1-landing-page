@@ -283,6 +283,23 @@ https://codepen.io/jakejarvis/pen/pBZWZw
 .about-section img {
   width: 100%;
 }
+
+.about-section figure {
+  animation: spin 100s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 table {
   margin: 2rem 0;
 }
