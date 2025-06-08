@@ -105,7 +105,7 @@ header {
 .landing-section {
   position: relative;
   min-height: 100vh;
-  background-image: url("/assets/gradient-img-v3.png");
+  background-image: url("/assets/gradient-img-v4.png");
   background-position: center;
   background-size: cover;
 
@@ -250,7 +250,7 @@ https://codepen.io/jakejarvis/pen/pBZWZw
 
   padding: 1.5rem;
 
-  background-image: url("/assets/about-gradient-v3.png");
+  background-image: url("/assets/about-gradient-v4.png");
   background-position: center;
   background-size: cover;
 
